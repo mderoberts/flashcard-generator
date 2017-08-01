@@ -3,7 +3,7 @@ var ClozeCard = function(text, cloze) {
     this.cloze = cloze;
     this.partial = text.split(cloze).pop();
     this.fullText = text;
-    this.card = function(){
+    this.cardCloze = function(){
         if(!cloze) {
         console.log(err);
         }
@@ -13,6 +13,6 @@ var ClozeCard = function(text, cloze) {
 
 var gDubs = new ClozeCard("George Washington was the first president.", "George Washington");
 
-gDubs.card();
+gDubs.cardCloze();
 
 // module.exports = ClozeCard;
